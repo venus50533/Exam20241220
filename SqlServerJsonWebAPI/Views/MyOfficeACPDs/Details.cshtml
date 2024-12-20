@@ -1,0 +1,54 @@
+﻿@model SqlServerJsonWebAPI.Models.MyOfficeACPD
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MyOfficeACPD</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Cname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Cname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Ename)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Ename)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Status)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_LoginID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_LoginID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_LoginPWD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_LoginPWD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_NowDateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_NowDateTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ACPD_SID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

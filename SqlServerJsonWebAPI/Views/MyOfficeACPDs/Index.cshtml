@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SqlServerJsonWebAPI.Models.MyOfficeACPD>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_Cname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_LoginID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_LoginPWD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACPD_NowDateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_Cname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_Ename)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_LoginID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_LoginPWD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ACPD_NowDateTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ACPD_SID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ACPD_SID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ACPD_SID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

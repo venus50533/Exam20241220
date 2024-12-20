@@ -1,0 +1,57 @@
+﻿@model SqlServerJsonWebAPI.Models.MyOfficeACPD
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>MyOfficeACPD</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Cname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Cname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Ename)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Ename)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_Status)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_LoginID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_LoginID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_LoginPWD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_LoginPWD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ACPD_NowDateTime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ACPD_NowDateTime)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ACPD_SID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

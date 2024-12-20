@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "drfpkMi/YA08qrQI+W2y1sCOtBJoBuZ74n8AYdisGhQ=",
+  "Source": "SqlServerJsonWebAPI",
+  "BasePath": "_content/SqlServerJsonWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

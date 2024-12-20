@@ -1,0 +1,59 @@
+﻿@model SqlServerJsonWebAPI.Models.MyOfficeACPD
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MyOfficeACPD</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ACPD_SID" />
+            <div class="form-group">
+                <label asp-for="ACPD_Cname" class="control-label"></label>
+                <input asp-for="ACPD_Cname" class="form-control" />
+                <span asp-validation-for="ACPD_Cname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACPD_Ename" class="control-label"></label>
+                <input asp-for="ACPD_Ename" class="form-control" />
+                <span asp-validation-for="ACPD_Ename" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACPD_Status" class="control-label"></label>
+                <input asp-for="ACPD_Status" class="form-control" />
+                <span asp-validation-for="ACPD_Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACPD_LoginID" class="control-label"></label>
+                <input asp-for="ACPD_LoginID" class="form-control" />
+                <span asp-validation-for="ACPD_LoginID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACPD_LoginPWD" class="control-label"></label>
+                <input asp-for="ACPD_LoginPWD" class="form-control" />
+                <span asp-validation-for="ACPD_LoginPWD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACPD_NowDateTime" class="control-label"></label>
+                <input asp-for="ACPD_NowDateTime" class="form-control" />
+                <span asp-validation-for="ACPD_NowDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SqlServerJsonWebAPI.props" />
+</Project>
